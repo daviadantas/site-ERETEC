@@ -1,0 +1,43 @@
+:root{
+    --cor-inicio: #06021A;
+    --cor-letra: #FFF;
+    --cor-botao: #CFF846;
+}
+
+.inicio{
+    background: url(./img/fundo-inicio.png) lightgray 50% / cover no-repeat;
+    background-position: right;
+    background-color: var(--cor-inicio);
+    width: 100vh;
+    height: 100vh;
+
+}
+
+.cabecalho{
+    margin: 5vh ;
+}
+
+.navegacao{
+    border-radius: 24px;
+    border: 1px solid #2B189A;
+    background: rgba(28, 16, 102, 0.50);
+    padding: 24px 48px;
+    gap: 330px; 
+}
+
+.nav-link{
+    color: var(--cor-letra);
+    font-size: 20px;
+}
+
+.btn-lg{
+    align-items: center;
+    text-align: center;
+    height: 40px;
+    width: 171px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: var(--cor-botao);
+    color: #180D59;
+}
+
