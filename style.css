@@ -1,7 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
 :root{
     --cor-inicio: #06021A;
     --cor-letra: #FFF;
     --cor-botao: #CFF846;
+    --fonte-botao: 'Inter', sans-serif; 
+    --fonte-letra: 'Plus Jakarta Sans', sans-serif;
+    
+}
+
+b{
+    color: var(--cor-botao);
+    font-family: var(--fonte-letra);
+    font-weight: 600;
 }
 
 .inicio{
@@ -23,21 +35,64 @@
     background: rgba(28, 16, 102, 0.50);
     padding: 24px 48px;
     gap: 330px; 
+    align-items: center;
 }
 
 .nav-link{
     color: var(--cor-letra);
     font-size: 20px;
+    font-family: var(--fonte-letra);
+    font-weight: 500;
 }
 
-.btn-lg{
-    align-items: center;
+.btn-lg, .btn-lg2 {
     text-align: center;
     height: 40px;
     width: 171px;
-    padding: 8px 16px;
+    padding: 8px 16px ;
     border-radius: 8px;
     background: var(--cor-botao);
     color: #180D59;
+    line-height: normal;
+    font-family: var(--fonte-botao);
+    font-weight: 400;
+}
+
+.container-inicio{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 370px;
+    gap: 24px;
+}
+
+.titulo{
+    color: var(--cor-letra);
+    font-family: var(--fonte-letra);
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 695px;
+    height: 299px;
+    gap: 0px;
+    opacity: 0px;
+    
+}
+
+.texto{
+    color: #FFF;
+    font-family: var(--fonte-letra);
+    font-size: 24px;
+    font-weight: 400;
+    width: 561px;
+    height: 66px;
+}
+
+.btn-lg2{
+    width: 236px;
+    height: 56px;
+    padding: 16px;
 }
 
