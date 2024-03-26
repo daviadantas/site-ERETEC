@@ -2,7 +2,6 @@
 
 
 :root{
-    --cor-inicio: #06021A;
     --cor-letra: #FFF;
     --cor-botao: #CFF846;
     --fonte-botao: 'Inter', sans-serif; 
@@ -16,10 +15,16 @@ b{
     font-weight: 600;
 }
 
+bb{
+    color: var(--cor-letra);
+    font-weight: 600;
+}
+
+
+
 .inicio{
-    background: url(./img/fundo-inicio.png) lightgray 50% / cover no-repeat;
+    background: url(./img/fundo-inicio.png) #06021A 50% / cover no-repeat;
     background-position: right;
-    background-color: var(--cor-inicio);
     width: 100vh;
     height: 100vh;
 
@@ -65,6 +70,8 @@ b{
     position: absolute;
     top: 370px;
     gap: 24px;
+    width: 515px;
+    height: 461px;
 }
 
 .titulo{
@@ -74,25 +81,41 @@ b{
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    width: 695px;
-    height: 299px;
     gap: 0px;
     opacity: 0px;
     
 }
 
 .texto{
-    color: #FFF;
+    color: var(--cor-letra);
     font-family: var(--fonte-letra);
     font-size: 24px;
     font-weight: 400;
-    width: 561px;
-    height: 66px;
 }
 
 .btn-lg2{
     width: 236px;
     height: 56px;
-    padding: 16px;
+    padding: 12px 16px;
+}
+
+.sobre-publico{
+    background: url(./img/fundo-sala-de-aula.png) #140B4B 50% / cover no-repeat;
+    background-blend-mode: overlay;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.sub-titulo{
+    color: var(--cor-letra);
+    font-family: var(--fonte-letra);
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 56px;
+}
+
+.container-sobre{
+    height: 396px;
 }
 
