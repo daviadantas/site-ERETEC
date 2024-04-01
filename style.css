@@ -175,7 +175,7 @@ bb{
     font-weight: 600;
 }
 
-.texto-card{
+.texto-card, texto-rodape{
     color: #000;
     font-family: var(--fonte-letra);
     font-size: 16px;
@@ -253,5 +253,19 @@ bb{
 }
 
 .rodape{
-    
+    background-color: #140B4B;
+}
+
+.container-sociais, .container-contato, .container-local{
+    width: 333px;
+    gap: 16px;
+}
+
+.texto-rodape{
+    font-size: 16px;
+    color: #FFF;
+}
+
+.container-contato, .container-local{
+    display: flex;
 }
