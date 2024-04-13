@@ -79,7 +79,7 @@ bb{
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
-    top: 370px;
+    top: 30vh;
     gap: 24px;
     width: 515px;
     height: 461px;
@@ -218,7 +218,7 @@ bb{
 }
 
 .sub-cor{
-    color: #8487F6;
+    color: #1559A8;
 }
 
 .container-programacao{
