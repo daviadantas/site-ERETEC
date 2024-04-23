@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 
+
 :root{
     --cor-letra: #FFF;
     --cor-botao: #CFF846;
@@ -29,6 +30,10 @@ bb{
     padding: 0;
 }
 
+.navbar-expand-lg{
+    justify-content: space-between;
+}
+
 
 
 .inicio{
@@ -50,7 +55,9 @@ bb{
     padding: 24px 48px;
     max-width: 1375px;
     align-items: center;
+    text-align: center;
 }
+
 
 .nav-link{
     color: var(--cor-letra);
@@ -298,6 +305,78 @@ bb{
     margin-bottom: 22px;
 }
 
+@media (max-width: 1055px){
+    
+}
 
 
+@media (max-width: 600px){
+    body, html, .container, .row, .col-4, .lado-redes, .lado-info {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .inicio{
+        background: url(./img/fundo-mobal.png) #06021A 50% / cover no-repeat;
+        background-position: left;
+        
+    }
+
+    .cabecalho{
+        margin: 0px ;
+    }
+    
+    .navegacao{
+        border-radius: 0px;
+        border: 0px;
+    }
+    
+    
+    .nav-link{
+        display: none;
+    }
+
+    .btn-lg{
+        display: none;
+    }
+
+    .btn-lg2, .btn-lg3 {
+        height: 15px;
+        width: 124px;
+        font-size: 12px;
+    }
+
+    .container-inicio{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 30vh;
+        gap: 4px;
+        max-width: 297px;
+
+    }
+    
+    .titulo{
+        color: var(--cor-letra);
+        font-family: var(--fonte-letra);
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        gap: 0px;
+        opacity: 0px;
+        
+    }
+    
+    .texto{
+        color: var(--cor-letra);
+        font-family: var(--fonte-letra);
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+
+
+}
 
