@@ -209,6 +209,10 @@ bb{
     color: #000;
 }
 
+.cor-fundo{
+    background-color: #162766;
+}
+
 #programacao{
     border-radius: 80px;
     background: #F6F9FF;
@@ -221,7 +225,8 @@ bb{
 }
 
 .espaco-prog{
-    margin-top: 150px;
+    margin: 150px auto auto auto ;
+    
 }
 
 .sub-cor{
@@ -249,7 +254,7 @@ bb{
 }
 
 .listra, .listra-bnc{
-    width: 740px;
+    width: 90%;
     border: 1px solid #000;
     margin-bottom: 80px;
 }
@@ -272,7 +277,7 @@ bb{
 }
 
 .container-sociais, .container-contato, .container-local{
-    width: 333px;
+    width: 80%;
 }
 
 .texto-rodape{
@@ -306,6 +311,28 @@ bb{
 }
 
 @media (max-width: 1055px){
+
+    .espaco-card{
+        display: inline-block;
+    }
+
+    .card{
+        margin-bottom: 32px;
+        
+    }
+
+    .texto-rodape{
+        font-size: 16px;
+        color: #FFF;
+    }
+
+    .texto-rodape{
+        font-size: 12px;
+    }
+
+    .espaco-pub{
+        font-size: 30px;
+    }
     
 }
 
