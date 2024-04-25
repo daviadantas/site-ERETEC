@@ -312,6 +312,10 @@ bb{
 
 @media (max-width: 1055px){
 
+    #sobre{
+        margin-bottom: 40vh;
+    }
+
     .espaco-card{
         display: inline-block;
     }
@@ -336,12 +340,30 @@ bb{
     
 }
 
-
-@media (max-width: 600px){
-    body, html, .container, .row, .col-4, .lado-redes, .lado-info {
-        margin: 0;
-        padding: 0;
+@media (max-width: 767px){
+    .texto-card{
+        font-size: 12px;
     }
+    .titulo-programacao{
+        font-size: 20px;
+        margin-bottom: 40px ;
+    }
+    
+    .sessao{
+        display: block;
+        gap: 16px; 
+    }
+    .img-prog{
+        margin-bottom: 20px;
+    }
+
+    .listra{
+        display: none;
+    }
+
+}
+
+@media (max-width: 576px){
     
     .inicio{
         background: url(./img/fundo-mobal.png) #06021A 50% / cover no-repeat;
