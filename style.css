@@ -37,6 +37,7 @@ bb{
 
 
 .inicio{
+    padding: 0px;
     background: url(./img/fundo-inicio.png) #06021A 50% / cover no-repeat;
     background-position: right;
     width: 100vh;
@@ -56,6 +57,10 @@ bb{
     max-width: 1375px;
     align-items: center;
     text-align: center;
+}
+
+.navegacao-mobal{
+    background: #162766;
 }
 
 
@@ -333,6 +338,31 @@ bb{
     
 }
 
+@media (max-width: 991px){
+
+
+    .cabecalho{
+        margin: 0px ;
+    }
+    
+    .navegacao{
+        background: #162766;
+        border-radius: 0px;
+        border: 0px;
+    }
+    
+    
+    .nav-link{
+        display: none;
+    }
+
+    .btn-lg{
+        display: none;
+    }
+
+
+}
+
 @media (max-width: 767px){
     #sobre{
         margin-bottom: 20vh;
@@ -367,30 +397,6 @@ bb{
 
 @media (max-width: 576px){
     
-    .inicio{
-        background: url(./img/fundo-mobal.png) #06021A 50% / cover no-repeat;
-        background-position: left;
-        
-    }
-
-    .cabecalho{
-        margin: 0px ;
-    }
-    
-    .navegacao{
-        border-radius: 0px;
-        border: 0px;
-    }
-    
-    
-    .nav-link{
-        display: none;
-    }
-
-    .btn-lg{
-        display: none;
-    }
-
     .btn-lg2, .btn-lg3 {
         height: 15px;
         width: 124px;
