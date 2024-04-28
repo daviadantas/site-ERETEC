@@ -141,7 +141,7 @@ bb{
 }
 
 .espaco-pub{
-    margin-top: 137px;
+    margin-top: 30vh;
 }
 
 .espaco-card{
@@ -312,10 +312,6 @@ bb{
 
 @media (max-width: 1055px){
 
-    #sobre{
-        margin-bottom: 40vh;
-    }
-
     .espaco-card{
         display: inline-block;
     }
@@ -334,15 +330,15 @@ bb{
         font-size: 12px;
     }
 
-    .espaco-pub{
-        font-size: 30px;
-    }
     
 }
 
 @media (max-width: 767px){
+    #sobre{
+        margin-bottom: 20vh;
+    }
     .texto-card{
-        font-size: 12px;
+        font-size: 16px;
     }
     .titulo-programacao{
         font-size: 20px;
@@ -359,6 +355,12 @@ bb{
 
     .listra{
         display: none;
+    }
+
+    .lado-redes {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        margin-top: 77px;
     }
 
 }
