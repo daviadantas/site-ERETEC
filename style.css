@@ -64,12 +64,16 @@ bb{
 }
 
 
-.nav-link{
+.nav-link, .nav-link-t {
     color: var(--cor-letra);
     font-size: 20px;
     font-family: var(--fonte-letra);
     font-weight: 500;
 
+}
+
+.nav-link-t{
+    display: none;
 }
 
 .btn-lg, .btn-lg2, .btn-lg3 {
@@ -349,6 +353,10 @@ bb{
         background: #162766;
         border-radius: 0px;
         border: 0px;
+    }
+
+    .nav-link-t{
+        display: block;
     }
     
     
