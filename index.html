@@ -10,11 +10,20 @@
 <body>    
     <header class="row">
         <div class=" col-12 inicio">
-            <div class="container-lg-none">
-                <nav class="navbar navegacao cabecalho navbar-expand-lg navbar-light ">
+            <div class="container" id="removivel">
+                <nav class="navbar navegacao cabecalho navbar-light">
                     <a href="index.html" class="cabecalho_logo navbar-brand">
                         <img src="img/logo-eretec.svg" alt="logo do eretec" class="img-fluid"/>
                     </a>
+
+                    <div class="d-flex">
+                        <a href="#sobre" class="cabecalho_link nav-link">Sobre</a>
+                        <a href="#publico" class="cabecalho_link nav-link">Público</a>
+                        <a href="#programacao" class="cabecalho_link nav-link">Programação</a>
+                    </div>
+                    
+
+                    <a href="https://www.sympla.com.br/eretec-vii__2421341" class="btn-lg px-md-3">Increva-se <img src="img/seta.svg" alt="icone de seta"/></a>
                     
                     <button class="navbar-toggler d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -33,14 +42,8 @@
                             </li>
                         </ul>
                     </div>
+                
                     
-                    <nav class="nav">
-                        <a href="#sobre" class="cabecalho_link nav-link">Sobre</a>
-                        <a href="#publico" class="cabecalho_link nav-link">Público</a>
-                        <a href="#programacao" class="cabecalho_link nav-link">Programação</a>
-                    </nav>
-       
-                    <a href="https://www.sympla.com.br/eretec-vii__2421341" class="btn-lg px-md-3">Increva-se <img src="img/seta.svg" alt="icone de seta"/></a>
                 </nav>
                 <div class="container-inicio">
                     <h1 class="titulo"><b><</b> O futuro da tecnologia se encontra na <b>Maria Célia /></b></h1>
@@ -80,7 +83,7 @@
                 <h2 class="sub-titulo espaco-pub"><b><</b> Público Alvo <b>/></b></h2>
 
                 <div class="row justify-content-center espaco-card">
-                    <div class="card col-4">
+                    <div class="card col-4 mb-5">
                         <div class="card-titulo ">
                             <img src="img/icone-alerta.svg" alt="icone de alerta"/>
                             <h2 class="titulo-card text-left">Quando
@@ -93,7 +96,7 @@
                         </div>
                     </div>
         
-                    <div class="card col-4">
+                    <div class="card col-4 mb-5">
                         <div class="card-titulo">
                             <img src="img/icone-alerta.svg" alt="icone de alerta"/>
                             <h2 class="titulo-card ">Quem deve
@@ -106,7 +109,7 @@
                         </div>
                     </div>
         
-                    <div class="card col-4">
+                    <div class="card col-4 mb-5">
                         <div class="card-titulo">
                             <img src="img/icone-alerta.svg" alt="icone de alerta"/>
                             <h2 class="titulo-card">Fique
@@ -223,6 +226,7 @@
     </div>
       </div>
 
+      <script src="main.js"></script>
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
       <script src="./js/bootstrap.min.js"></script>

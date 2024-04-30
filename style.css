@@ -44,7 +44,6 @@ bb{
     height: 100vh;
 
 }
-
 .cabecalho{
     margin: 5vh ;
 }
@@ -69,7 +68,7 @@ bb{
     font-size: 20px;
     font-family: var(--fonte-letra);
     font-weight: 500;
-
+    
 }
 
 .nav-link-t{
@@ -322,7 +321,7 @@ bb{
 @media (max-width: 1055px){
 
     .espaco-card{
-        display: inline-block;
+        display: inline-block
     }
 
     .card{
@@ -372,6 +371,7 @@ bb{
 }
 
 @media (max-width: 767px){
+
     #sobre{
         margin-bottom: 20vh;
     }
@@ -439,6 +439,27 @@ bb{
         font-family: var(--fonte-letra);
         font-size: 12px;
         font-weight: 400;
+    }
+
+    .sub-titulo{
+        font-size: 24px;
+    }
+    
+    
+    .titulo-card{
+        font-size: 16px;
+    }
+
+    .texto-card, texto-rodape{
+        color: #000;
+        font-family: var(--fonte-letra);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; 
+        width: 291px;
+        text-align: left 
+    
     }
 
 
