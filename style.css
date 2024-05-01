@@ -90,7 +90,6 @@ bb{
 }
 
 .container-inicio{
-    display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
@@ -212,6 +211,7 @@ bb{
     margin-bottom: 0px;
 }
 
+
 .texto-linha{
     text-decoration-line: underline;
     color: #000;
@@ -326,7 +326,10 @@ bb{
 
     .card{
         margin-bottom: 32px;
-        
+    }
+
+    .texto-card, texto-rodape{
+        font-size: 16px;
     }
 
     .texto-rodape{
@@ -451,15 +454,7 @@ bb{
     }
 
     .texto-card, texto-rodape{
-        color: #000;
-        font-family: var(--fonte-letra);
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%; 
-        width: 291px;
-        text-align: left 
-    
+        font-size: 12px;  
     }
 
 
