@@ -320,6 +320,10 @@ bb{
 
 @media (max-width: 1055px){
 
+    .titulo{
+        font-size: 52px;
+    }
+
     .espaco-card{
         display: inline-block
     }
@@ -444,8 +448,13 @@ bb{
         font-weight: 400;
     }
 
+
     .sub-titulo{
         font-size: 24px;
+    }
+
+    .card{
+        margin: 0px;
     }
     
     
