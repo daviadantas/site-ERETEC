@@ -350,6 +350,11 @@ bb{
 
 @media (max-width: 991px){
 
+    .inicio{
+        background: url(./img/fundo-de-papel-de-parede-artistico-borrado-e-colorido.jpg)  #162766 50% / cover no-repeat;
+        background-position: left;
+    }
+
 
     .cabecalho{
         margin: 0px ;
@@ -378,6 +383,7 @@ bb{
 }
 
 @media (max-width: 767px){
+
 
     #sobre{
         margin-bottom: 20vh;
@@ -411,11 +417,20 @@ bb{
 }
 
 @media (max-width: 576px){
+
+    #sobre{
+        margin-bottom: 0vh;
+    }
+
     
     .btn-lg2, .btn-lg3 {
+        display: table;
         height: 15px;
-        width: 124px;
-        font-size: 12px;
+        font-size: 10px;
+    }
+
+    .btn-lg3{
+        width: 300px;
     }
 
     .container-inicio{
@@ -446,6 +461,10 @@ bb{
         font-family: var(--fonte-letra);
         font-size: 12px;
         font-weight: 400;
+    }
+
+    .espaco-pub{
+        margin-top: 0vh;
     }
 
 
