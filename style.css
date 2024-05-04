@@ -261,6 +261,13 @@ bb{
     margin-bottom: 32px;
 }
 
+
+
+.img-patrocionio {
+    width: 500px; 
+    height: auto; 
+}
+
 .listra, .listra-bnc{
     width: 90%;
     border: 1px solid #000;
@@ -353,6 +360,10 @@ bb{
     .inicio{
         background: url(./img/fundo-de-papel-de-parede-artistico-borrado-e-colorido.jpg)  #162766 50% / cover no-repeat;
         background-position: left;
+    }
+
+    .container-inicio{
+        justify-content: center;
     }
 
 
