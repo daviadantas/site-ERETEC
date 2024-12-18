@@ -1,330 +1,461 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css"  />
+    <link rel="stylesheet" href="style.css"  />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/favicon.svg" type="image/x-icon">
-    <title>ERETEC</title>
+    <title>Robot Class</title>
 </head>
-<body>    
-    <header class="row">
-        <div class=" col-12 inicio">
-            <div class="container" id="removivel">
-                <nav class="navbar navegacao cabecalho navbar-light">
-                    <a href="index.html" class="cabecalho_logo navbar-brand">
-                        <img src="img/logo-eretec.svg" alt="logo do eretec" class="img-fluid"/>
-                    </a>
-
-                    <div class="d-flex">
-                        <a href="#sobre" class="cabecalho_link nav-link">Sobre</a>
-                        <a href="#publico" class="cabecalho_link nav-link">Público</a>
-                        <a href="#programacao" class="cabecalho_link nav-link">Programação</a>
-                    </div>
-                    
-
-                    <a href="https://www.sympla.com.br/eretec-vii__2421341" class="btn-lg px-md-3">Increva-se <img src="img/seta.svg" alt="icone de seta"/></a>
-                    
-                    <button class="navbar-toggler d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link-t" href="#sobre">Sobre</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link-t" href="#publico">Público</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link-t" href="#programacao">Programação</a>
-                            </li>
-                        </ul>
-                    </div>
-                
-                    
-                </nav>
-                <div class="container-inicio container">
-                    <h1 class="titulo"><b><</b> O futuro da tecnologia se encontra na <b>Maria Célia /></b></h1>
-                    <p class="texto">Explorando as novas dimensões de software, redes e inteligência artificial.</p>
-                    <a href="https://www.sympla.com.br/eretec-vii__2421341" class="btn-lg2">Inscreva-se agora! <img src="img/seta.svg" alt="icone de seta" class="img-fluid" /></a>
+<body>
+    <header id="cabecalho">
+        <div>
+            <nav class="navbar navbar-light">
+                <div>
+                    <h1><img src="./img/IconeRC_header.svg" alt="Logo da Robotclass" id="cabecalhoM"/></h1>
+                    <h1><img src="./img/IconeRCDesktop.svg" alt="Logo da Robotclass" id="cabecalhoD"/></h1>
                 </div>
-            </div>
-        </div>
-    </header> 
-    <script src="main.js"></script>
     
+                <button class="navbar-toggler d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><img src="img/iconAbas.svg" alt="abas"></span>
+                </button>
+
+
     
-    <div class="sobre-publico ">
-        <div class="row fundo">
-            <section id="sobre" class="col-12">
-                <h2 class="sub-titulo espaco-sub"><b><</b> Sobre o  ERETEC <b>/></b></h2>
-                <div class="container container-sobre">
-
-                    <p class="texto">Imagine um lugar onde a tecnologia não apenas conecta,
-                        mas transforma; onde o futuro é agora. Esse lugar é o ERETEC, o encontro que traz o brilho da inovação para Pereiro, 
-                        diretamente da Escola Maria Célia e do coração vibrante da comunidade tech. </p>
-        
-                        <p class="texto">
-                            <bb>Explorando as Novas Dimensões de Software, Redes e Inteligência Artificial</bb> não é apenas um tema; é o nosso manifesto para 2024.
-                            Por que se contentar em seguir tendências se você pode estar à frente delas? No ERETEC, vamos mergulhar de cabeça nas tecnologias 
-                            que estão redesenhando o mundo: IA que pensa, redes que voam e softwares que transformam tudo. Está pronto para ser um pioneiro? 
-                        </p>
-        
-                        <p class="texto">
-                            <b>Junte-se a nós para moldar, testar e celebrar o futuro da tecnologia.</b>
-                        </p>
-            <section/>
-        </div>
-
-            </section>
+                <div class="collapse navbar-collapse d-lg-block" id="navbarNav">
+                    <ul class="navbar-nav ml-auto links">
+                        <li class="nav-item">
+                            <a href="#inicio" class="nav-link">
+                                <img src="./img/iconeInicio_drop.svg" alt="icone de casa" class="imgDrop"/>
+                                <span>INICIO</span>
+                            </a>
+                        </li>
     
-            <section id="publico" class="col-12">
-                <h2 class="sub-titulo espaco-pub"><b><</b> Público Alvo <b>/></b></h2>
-
-                <div class="row justify-content-center espaco-card">
-                    <div class="card mb-5" style="width: 20rem;">
-                        <div class="card-titulo">
-                            <img src="img/icone-alerta.svg" alt="icone de alerta"/>
-                            <h2 class="titulo-card text-left">Quando e Onde?</h2>
-                        </div>
-                        <div class="card-body">
-                        
-                          <p class="card-text"><span class="texto-negrito">Data:</span> 10 de maio de 2024 </p>
-                          <p class="card-text"><span class="texto-negrito">Hora:</span> A partir das 08h00 </p>
-                          <p class="card-text"><span class="texto-negrito">Local:</span> EEEP Professora Maria Célia Pinheiro Falcão, Pereiro - CE </p>
-                          <p class="card-text"><span class="texto-negrito">Transmissão ao Vivo:</span> Não pode comparecer pessoalmente? Acompanhe cada momento em nossa <a class="texto-linha" href="https://www.youtube.com/EPMariaCélia">página do Youtube.</a></p>
-                        </div>
-                      </div>
-
-                      <div class="card mb-5" style="width: 20rem;">
-                        <div class="card-titulo">
-                            <img src="img/icone-alerta.svg" alt="icone de alerta"/>
-                            <h2 class="titulo-card text-left">Quem deve
-                                Participar?</h2>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text ">Você está cursando ensino técnico ou superior em Tecnologia da Informação ou áreas correlatas? Então, o ERETEC é feito para você. </p>
-                            <p class="card-text ">Estudantes, professores, profissionais e entusiastas de TI são incentivados a explorar inovações e tendências emergentes, além de se conectar com líderes da indústria.</p>
-                        </div>
-                      </div>
-
-                      <div class="card mb-5" style="width: 20rem;">
-                        <div class="card-titulo">
-                            <img src="img/icone-alerta.svg" alt="icone de alerta"/>
-                            <h2 class="titulo-card text-left">Fique
-                                Conectado!</h2>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Garanta sua participação no maior encontro tecnológico de Pereiro. Além da presença física, oferecemos a opção de acompanhar todas as palestras e workshops em tempo real pela nossa transmissão ao vivo. </p>
-        
-                            <p class="card-text">Assim, você não perde nenhum insight valioso, onde quer que esteja.</p>
-                        </div>
-                      </div>
-                    
+                        <li class="nav-item">
+                            <a href="#sobreNos" class="nav-link">
+                                <img src="./img/IconeSobrenos.svg" alt="icone de aviso" class="imgDrop"/>
+                                <span>SOBRE NÓS</span>
+                            </a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a href="#materiais" class="nav-link">
+                                <img src="./img/iconeMaterial_drop.svg" alt="icone de clip de papel" class="imgDrop"/>
+                                <span>MATERIAIS</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </section>
-            </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="linha2"></div>
+
+
+    <div id="inicio">
+        <div class="centralizar">
+            <img src="./img/LogoRC_mobaal.svg" alt="logo do Robotclass" id="logo-mobal" class="logo">
+            <img src="./img/IconeRC_desktopTablet.svg" alt="logo do Robotclass" id="logo-desk" class="logo">
+            <a href="#sobreNos" class="bntInicio">SAIBA MAIS<img src="./img/iconseta.svg" id="seta"></a>
+        </div>
+    </div>
+
+    <div class="linha"></div>
+    <div id="sobreNos" class="espaco">
+        <h2 class="titulo-secao">SOBRE NÓS</h2>
+        <div id="sobreNosDiv">
+            <p class="texto-sobre">
+                ROBOT CLASS é um projeto escolar voltado ao público infantil e adolescente,
+                 oferecendo noções básicas de robótica a pessoas com pouco ou nenhum contato com tecnologia. Nosso guia de aprendizado serve como um 
+                 recurso para orientar os jovens em sua jornada de exploração e aprendizado na área da robótica, abrindo novos olhares e caminhos para 
+                 tecnologia, robótica e programação.
+            </p>
+
+            <p class="texto-sobre">
+                Oferecemos uma abordagem educacional estruturada e diversificada, focada no conhecimento tecnológico.
+                 Enfatizamos a participação ativa dos estudantes em atividades práticas que incentivam o pensamento lógico, a resolução de problemas e o trabalho em equipe. 
+                 Com uma progressão planejada, desde conceitos básicos até desafios complexos, garantimos que todos os alunos possam se desenvolver conforme suas habilidades 
+                 e ritmo individual.
+            </p>
+
         </div>
 
-      <div class="cor-fundo">
-        <section id="programacao" >
-            <div class="">
-                <div class="row ">
-                    <h2 class="sub-titulo2 espaco-prog "><b class="sub-cor"><</b> Programação <b class="sub-cor">/></b></h2>
-                    <div class="row justify-content-center">
-                        <ul class="col-12 container-programacao ">
-                            <h2 class="titulo-programacao"><b class="sub-cor"><</b> Palestras <b class="sub-cor">/></b></h2>
-            
-                            <li class="sessao">
-                                <img src="img/paulo cesar.png" alt="foto ilustrativa da palestra" class="img-fluid img-prog"/>
-                                <p class="texto-card"><span class="texto-negrito">Palestra:</span>Além dos códigos: Navegando pelos desafios da gestão ágil em equipe de TI </p>
-                                <p class="texto-card"><span class="texto-negrito">Palestrante:</span> <a href="https://www.linkedin.com/in/paulocesar1998/" class="texto-linha">Paulo César</a> as 8H10min</p>
-                            </li>
-                            <div class="listra"></div>
-
-                            <li class="sessao">
-                                <img src="img/adriano.png" alt="foto ilustrativa da palestra" class="img-fluid img-prog"/>
-                                <p class="texto-card"><span class="texto-negrito">Palestra:</span>Inteligência Artificial: (IA) em Redes de computadores</p>
-                                <p class="texto-card"><span class="texto-negrito">Palestrante:</span> <a href=" https://www.linkedin.com/in/adriano-de-oliveira-maia-591829101/" class="texto-linha">Adriano Maia</a> as 9H20min</p>
-                            </li>
-                            <div class="listra"></div>
-
-                            <li class="sessao">
-                                <img src="img/Henrique morais.png" alt="foto ilustrativa da palestra" class="img-fluid img-prog"/>
-                                <p class="texto-card"><span class="texto-negrito">Palestra:</span>5G - Muito Mais que uma Rede Móvel</p>
-                                <p class="texto-card"><span class="texto-negrito">Palestrante:</span> <a href="https://www.linkedin.com/in/instrutor-henrique-morais/" class="texto-linha">Henrique Morais</a> as 10H10min</p>
-                            </li>
-                            <div class="listra"></div>
-
-                            <li class="sessao">
-                                <img src="img/Giovanny.png" alt="foto ilustrativa da palestra" class="img-fluid img-prog"/>
-                                <p class="texto-card"><span class="texto-negrito">Palestra:</span> Como a Internet das Coisas (IoT) está mudando o mundo </p>
-                                <p class="texto-card"><span class="texto-negrito">Palestrante:</span> <a href="https://www.linkedin.com/in/giovanny-oliveira/" class="texto-linha">Giovanny Oliveira</a> as 11H00</p>
-                            </li>
-                            <div class="listra"></div>
-                        </ul>
-                    
-            
-                        <ul class="col-12 container-programacao">
-                            <h2 class="titulo-programacao"><b class="sub-cor"><</b> Maratonas <b class="sub-cor">/></b></h2>
-                        
-                            <li class="sessao">
-                                <img src="img/prog.svg" alt="foto ilustrativa da maratona " class="img-fluid img-prog" />
-                                <p class="texto-card"><span class="texto-negrito">Maratona de Programação:</span> Um desafio de codificação em equipe onde habilidade e criatividade se encontram. Enfrente problemas reais em um ambiente competitivo e colaborativo.</p>
-                                <p class="texto-card"><span class="texto-negrito">organizadores:</span> <a href="https://www.linkedin.com/in/daviaraujo9" class="texto-linha">Davi Araujo</a> e <a href="https://www.linkedin.com/in/guilherme-dev-morais/" class="texto-linha">Guilherme Morais
-                                </a> as 13H20min.</p>
-                            </li>
-                            <div class="listra"></div>
-
-                            <li class="sessao">
-                                <img src="img/cripto.svg" alt="foto ilustrativa da maratona " class="img-fluid img-prog" />
-                                <p class="texto-card"><span class="texto-negrito">Maratona de  Criptografia:</span> Uma competição  que desafia os participantes a decifrar códigos e solucionar enigmas criptográficos sob pressão de tempo.</p>
-                                <p class="texto-card"><span class="texto-negrito">organizadores:</span> <a href="https://www.linkedin.com/in/marcs-paulo/" class="texto-linha">Marcos Paulo</a> e <a href="https://www.linkedin.com/in/yure-henrique" class="texto-linha">Yure Henrique </a> as 13H20min.</p>
-                            </li>
-                            <div class="listra"></div>
-                        </ul>
-            
-                        <ul class="col-12 container-programacao">
-                            <h2 class="titulo-programacao"><b class="sub-cor"><</b> Oficinas <b class="sub-cor">/></b></h2>
-                        
-                            <li class="sessao">
-                                <img src="img/jose.svg" alt="foto ilustrativa da palestra" class="img-fluid img-prog"/>
-                                <p class="texto-card"><span class="texto-negrito">Oficina:</span>Automação de Processos com Microcontroladores: Na oficina , você verá sistemas automatizados, utilizando microcontroladores para controlar dispositivos e processos. </p>
-                                <p class="texto-card"><span class="texto-negrito">Instrutor:</span> <a href="https://www.linkedin.com/in/eduardo-morais-2075b7307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="texto-linha">José Eduardo</a> as 13H20min</p>
-                            </li>
-                            <div class="listra"></div>
-
-                            <li class="sessao">
-                                <img src="img/tha.svg" alt="foto ilustrativa da palestra" class="img-fluid img-prog"/>
-                                <p class="texto-card"><span class="texto-negrito">Oficina:</span> Git e GitHub: Na oficina, você descobrirá o poder do controle de versão e colaboração em projetos de software. Aprenda a criar e gerenciar repositórios, entender o fluxo de trabalho do Git e explorar as funcionalidades do GitHub para colaboração eficaz.</p>
-                                <p class="texto-card"><span class="texto-negrito">Instrutor:</span> <a href="https://www.linkedin.com/in/tharlys-alves/" class="texto-linha">Tharlys Alves</a> as 13H20min</p>
-                            </li>
-                            <div class="listra"></div>
-
-                            <li class="sessao">
-                                <img src="img/rafael.svg" alt="foto ilustrativa da palestra" class="img-fluid img-prog"/>
-                                <p class="texto-card"><span class="texto-negrito">Oficina:</span>  Arduino - Iniciação Prática: Na oficina , você terá a oportunidade de mergulhar no mundo do Arduino, aprendendo a programar e construir projetos práticos desde o início. Este é o lugar perfeito para iniciantes que desejam explorar a criatividade e a tecnologia.</p>
-                                <p class="texto-card"><span class="texto-negrito">Instrutor:</span> <a href="http://www.linkedin.com/in/rafael-barros9" class="texto-linha">Rafael Barros Sobreira Pereira</a> as 13H20min</p>
-                            </li>
-                            <div class="listra"></div>
-
-                            <li class="sessao">
-                                <img src="img/jogos.svg" alt="foto ilustrativa da palestra" class="img-fluid img-prog"/>
-                                <p class="texto-card"><span class="texto-negrito">Oficina:</span>Sala de jogos: Na Sala de Jogos, você terá a chance de mergulhar no universo dos campeonatos de jogos eletrônicos, como FIFA entre outros</p>
-                                <p class="texto-card"><span class="texto-negrito">Instrutores:</span> <a href="https://www.linkedin.com/in/luiz-henrique-13a72725b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="texto-linha">Luiz Henrique</a> e <a href="https://www.linkedin.com/in/jpedrolpsi/" class="texto-linha">João pedro </a> as 13H20min.</p>
-                            </li>
-                            <div class="listra"></div>
-                        </ul>
-
-                        <ul class="col-12 container-programacao">
-                            <h2 class="titulo-programacao"><b class="sub-cor"><</b> Patrocinadores <b class="sub-cor">/></b></h2>
-                    
-                            <li class="sessao">
-                                <img src="img/brisanet.png" alt="logo da mariacelia" class="img-fluid img-prog "/>
-                                
-                            </li>
-                            <div class="listra"></div>
-
-                            <li class="sessao">
-                                <img src="img/agility.png" alt="logo da mariacelia" class="img-fluid img-prog "/>
-
-                            </li>
-                            <div class="listra"></div>
-
-                            <li class="sessao">
-                                <img src="img/biofisio.png" alt="logo da mariacelia" class="img-fluid img-prog "/>
-
-                            </li>
-                            <div class="listra"></div>
-
-                            <li class="sessao">
-                                <img src="img/anderson.png" alt="logo da mariacelia" class="img-fluid img-prog "/>
-                            
-                            </li>
-                            <div class="listra"></div>
-
-                            <li class="sessao">
-                                <img src="img/cosminho.png" alt="logo da mariacelia" class="img-fluid img-prog "/>
-
-                            </li>
-                            <div class="listra"></div>
-
-                            <li class="sessao">
-                                <img src="img/cdl.png" alt="logo da mariacelia" class="img-fluid img-prog "/>
-                            
-                            </li>
-                            <div class="listra"></div>
-                            
-                            <li class="sessao">
-                                <img src="img/Maria.png" alt="logo da mariacelia" class="img-fluid img-prog "/>
-
-                            </li>
-                            <div class="listra"></div>
-
-
-
-                        </ul>
-
-                        <a class="btn-lg3" href="https://www.sympla.com.br/eretec-vii__2421341">Inscreva-se e faça parte desse mega evento! <img src="./img/seta.svg" ></a>
-
-                    </div>
-                </div>
-            </div>
-
-        </section>
 
     </div>
 
-    <footer class="footer rodape">
-        <div class="container ">
-            <div class="row d-flex justify-content-between">
-                <div class="lado-redes col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                    <div class="container-sociais">
-                        <h3 class="texto-rodape texto-negrito">Redes Sociais:</h3>
-                        <p class="texto-rodape">Fique por dentro das últimas atualizações, interaja conosco e faça parte da nossa comunidade online. Siga-nos em nossas redes sociais:</p>
-                        <div class="icones d-flex">
-                            <a href="https://www.instagram.com/ere.tec/"><img src="img/logo-insta.svg" alt="logo do instagram" class="img-fluid"></a>
-                            <a href="#"><img src="img/logo-face.svg" alt="logo do facebook" class="img-fluid"></a>
-                            <a href="https://www.youtube.com/EPMariaCélia"><img src="img/logo-youtube.svg" alt="logo do Youtube" class="img-fluid"></a>
-                        </div>
-                    </div>
-                    <img src="img/logo-eretec.svg" alt="logo do eretec" class="img-fluid mb-5"/>
-                </div>
-                <div class="lado-info col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                    <div class="container-contato">
-                        <img src="img/logo-contato.svg" alt="imagem de carta" class="img-fluid">
-                        <div>
-                            <h3 class="texto-rodape texto-negrito">Contato:</h3>
-                            <p class="texto-rodape">Para mais informações, dúvidas ou suporte, entre em contato conosco através do e-mail: massaro.alves@prof.ce.gov.br.</p>
-                        </div>
-                    </div>
-                    <div class="container-local">
-                        <img src="img/logo-local.svg" alt="logo de localização" class="img-fluid">
-                        <div>
-                            <h3 class="texto-rodape texto-negrito">Localização e Data:</h3>
-                            <p class="texto-rodape">Local: EEEP Professora Maria Célia Pinheiro Falcão, Centro, Pereiro-CE. Data de Realização: 06 de maio de 2024</p>
-                        </div>
+
+    <div id="galeria" class="espaco">
+        <div class="linha"></div>
+
+        <h2 class="titulo-secao">GALERIA</h2>
+        
+        <div class="swiper swiperGaleria" id="swiperGaleria">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="project-img">
+                        <img src="./img/galeria-f1.svg" alt="Foto 01">
                     </div>
                 </div>
+                <div class="swiper-slide">
+                    <div class="project-img">
+                        <img src="./img/galeria-f2.svg" alt="Foto 02">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-img">
+                        <img src="./img/galeria-f3.svg" alt="Foto 03">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-img">
+                        <img src="./img/galeria-f4.svg" alt="Foto 03">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-img">
+                        <img src="./img/galeria-f5.svg" alt="Foto 03">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-img">
+                        <img src="./img/galeria-f6.svg" alt="Foto 03">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-img">
+                        <img src="./img/galeria-f7.svg" alt="Foto 03">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-img">
+                        <img src="./img/galeria-f8.svg" alt="Foto 03">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="linha"></div>
+    </div>
+
+
+    <div id="materiais" class="espaco">
+
+        <h2 class="titulo-secao">MATERIAIS</h2>
+
+        
+        <div id="materiais1" class="materiais">
+            <div class="swiper swiperm">
+                    <a class="btn-carrossel" href="./pdf/ROBOT CLASS- introdução.pdf" download="Introducao_RobotClass.pdf">
+                        <h2 class="titulo-material">INTRODUÇÃO</h2>
+                        <img src="./img/ROBOT_CLASS_capa-mobal.svg" class="img-btn"/>
+                    </a>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="project-img primeira-img">
+                            <img src="./img/arduinogeral-1.svg" alt="Foto 01">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/arduinogeral-2.svg" alt="Foto 02">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/arduinogeral-3.svg" alt="Foto 03">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/arduinogeral-4.svg" alt="Foto 03">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/arduinogeral-5.svg" alt="Foto 03">
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+    
+        <div id="materiais2" class="materiais">
+            <div class="swiper swiperm">
+                <a class="btn-carrossel" href="./pdf/semáforo.pdf" download="semáforo.pdf">
+                    <h2 class="titulo-material">SEMÁFORO</h2>
+                    <img src="./img/ROBOT_CLASS_capa-mobal.svg" class="swiper-slide img-btn"/>
+                </a>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/semaforo-1.svg" alt="Foto 01">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/semaforo-8.svg" alt="Foto 02">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/semaforo-2.svg" alt="Foto 03">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/semaforo-3.svg" alt="Foto 03">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/semaforo-7.svg" alt="Foto 03">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/semaforo-5.svg" alt="Foto 03">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/semaforo-6.svg" alt="Foto 03">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/semaforo-4.svg" alt="Foto 03">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+        <div id="materiais3" class="materiais">
+            <div class="swiper swiperm">
+                <a class="btn-carrossel" href="./pdf/Guia Prático - Piano.pdf" download="Piano.pdf">
+                    <h2 class="titulo-material">PIANO</h2>
+                    <img src="./img/ROBOT_CLASS_capa-mobal.svg" class="swiper-slide img-btn"/>
+                </a>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/piano-1.svg" alt="Foto 01">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/piano-2.svg" alt="Foto 02">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/piano-3.svg" alt="Foto 03">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/piano-4.svg" alt="Foto 03">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/piano-5.svg" alt="Foto 03">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+        <div id="materiais4" class="materiais">
+            <div class="swiper swiperm">
+                <a class="btn-carrossel" href="./pdf/TRANCA ELECTROTÉCNICA EM ARDUINO (1).pdf" download="TRANCA ELECTROTÉCNICA EM ARDUINO.pdf">
+                    <h2 class="titulo-material">TRANCA ELETRONICA</h2>
+                    <img src="./img/ROBOT_CLASS_capa-mobal.svg" class="swiper-slide img-btn"/>
+                </a>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/tranca-1.svg" alt="Foto 01">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/tranca-2.svg" alt="Foto 02">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/tranca-3.svg" alt="Foto 03">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/tranca-4.svg" alt="Foto 03">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/tranca-5.svg" alt="Foto 03">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+        <div id="materiais5" class="materiais">
+            <div class="swiper swiperm">
+                <a class="btn-carrossel" href="./pdf/Guia Prático - fita metrica.pdf" download="fita metrica.pdf">
+                    <h2 class="titulo-material">FITA METRICA</h2>
+                    <img src="./img/ROBOT_CLASS_capa-mobal.svg" class="swiper-slide img-btn"/>
+                </a>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/fita-1.svg" alt="Foto 01">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/fita-2.svg" alt="Foto 02">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/fita-3.svg" alt="Foto 03">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/fita-4.svg" alt="Foto 03">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/fita-5.svg" alt="Foto 03">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+        <div id="materiais6" class="materiais">
+            <div class="swiper swiperm">
+                <a class="btn-carrossel" href="./pdf/SISTEMA DE MONITORAMENTO DE PONTO CEGO.pdf" download="SISTEMA DE MONITORAMENTO DE PONTO CEGO.pdf">
+                    <h2 class="titulo-material">SENSOR</h2>
+                    <img src="./img/ROBOT_CLASS_capa-mobal.svg" class="swiper-slide img-btn"/>
+                </a>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/sensor-1.svg" alt="Foto 01">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/sensor-2.svg" alt="Foto 02">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/sensor-3.svg" alt="Foto 03">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/sensor-4.svg" alt="Foto 03">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./img/sensor-5.svg" alt="Foto 03">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="linksR">
+                <h3>
+                    <img src="img/icon _link.svg" alt="Ícone de Links"> Links
+                </h3>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Materiais</a></li>
+                </ul>
+            </div>
+    
+            <div class="endereco">
+                <h3>
+                    <img src="img/icon_local.svg" alt="Ícone de Endereço"> Endereço
+                </h3>
+                <ul>
+                    <li><a>Local: EEEP Professora Maria</a></li>
+                    <li><a>Célia Pinheiro Falcão, Centro,</a></li>
+                    <li><a>Pereiro-CE.</a></li>
+                </ul>
+            </div>
+    
+            <div class="social">
+                <a href="#">
+                    <img src="img/icone_Instagram.svg" alt="Instagram">
+                </a>
+                <a href="#">
+                    <img src="img/IconeRC_rodape.svg" alt="RC">
+                </a>
             </div>
         </div>
     </footer>
-
-    <div id="copyright">
-        <div class="container container-copy">
-            <div class="listra-bnc"></div>
-
-            <p class="texto-rodape">Powered by Eixo Técnico de Informação e Comunicação.</p>
-        </div>
-    </div>
-      </div>
-
+    
+    
+   
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
       <script src="./js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+      <script>
+    const swiperGaleria = new Swiper('.swiperGaleria', {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 3,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    });
+    const swiper = new Swiper('.swiperm', {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 2.3,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    });
+
+
+      </script>
 </body>
 </html>
-<!-- 01100011 01110010 01101001 01110011 01110100 01101111 00100000 01110110 01101001 01110110 01100101 -->
+
+
+           
+
